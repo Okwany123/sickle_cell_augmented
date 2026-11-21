@@ -1,0 +1,27 @@
+{
+  "detector": {
+    "size": 384,
+    "anchor_sizes": [
+      12,
+      24,
+      48
+    ],
+    "anchor_ratios": [
+      0.5,
+      1.0,
+      2.0
+    ],
+    "score_floor": 0.002,
+    "nms": 0.4,
+    "max_detections": 60
+  },
+  "segmenter": {
+    "side": 64,
+    "context": 1.42,
+    "minimum_component": 8,
+    "batch": 32
+  },
+  "backbone_url": "https://download.pytorch.org/models/fasterrcnn_resnet50_fpn_coco-258fb6c6.pth",
+  "detector_threshold": 0.41488224267959595,
+  "mask_threshold": 0.65
+}
